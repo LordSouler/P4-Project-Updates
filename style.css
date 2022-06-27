@@ -18,6 +18,40 @@ a:hover {
     cursor: pointer;
 }
 
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#title h1{
+    font-size: small;
+}
+
+.row {
+    padding: 0 10px;
+}
+
+#title2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#title2 h1{
+    font-size: small;
+}
+
+.quote{
+    font-size: x-small;
+    margin: 0;
+}
+
+.col-sm-6 img{
+    width: 310px;
+    height: 310px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -195,7 +229,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, rgba(0, 0, 1, .25));
 }
 
 .d-bloc .panel button:hover,
@@ -645,10 +679,8 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -781,12 +813,12 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #C27956;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -803,11 +835,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #364577!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #364577!important;
 }
 
 .icon-dark-slate-blue {
@@ -823,12 +855,22 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-atlanta-20made-20sign {
+/*.bg-atlanta-20made-20sign {
     background-image: url("img/atlanta%20made%20sign.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
     background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+} */
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text-center p{
+    color: #F2F2F2;
 }
 
 @media (max-width: 1024px) {
@@ -1044,5 +1086,19 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media (max-width:850px) {
+    .col-sm-6 img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width:1000px) {
+    .col-sm-6 img {
+        width: 300px;
+        height: 300px;
     }
 }
